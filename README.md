@@ -4,7 +4,7 @@
 
 Environment variables:
 
-- ** ***********EVENT** (required) supervisord event name
+- **EVENT** (required) supervisord event name
 - **PROCESSNAME** (required) process name
 - **DELAY** (required) delay in seconds
 - **EXECUTE** (required) command to execute
