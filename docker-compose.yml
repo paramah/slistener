@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+
+    supervisord-test:
+        image: paramah/php:7.2
+        container_name: test-supervisord
+        volumes:
+          - ./supervisor-example.conf:/etc/supervisor/services/php-fpm.conf
+          - ./listener.py:/root/listener.py
+

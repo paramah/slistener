@@ -15,10 +15,10 @@ def main(args):
     logger = logging.getLogger("supervisord-eventlistener")
     debug_mode = True if 'DEBUG' in os.environ else False
     
-    if 'PROCESNAME' in os.environ:
-        processName = os.environ["PROCESNAME"]
+    if 'PROCESSNAME' in os.environ:
+        processName = os.environ["PROCESSNAME"]
     else: 
-        logger.critical("Set PROCESNAME in environment!");
+        logger.critical("Set PROCESSNAME in environment!");
         exit(1)
 
     if 'EVENT' in os.environ:

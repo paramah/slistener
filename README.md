@@ -27,5 +27,5 @@ events=PROCESS_STATE_STARTING
 autorestart=true
 stderr_logfile=errorlogfile
 stdout_logfile=applogfile
-environment=DEBUG="true",EVENT="PROCESS_STATE_STARTING",PROCESNAME="php-fpm",DELAY="2","EXECUTE"="/bin/echo testing"
+environment=DEBUG="true",EVENT="PROCESS_STATE_STARTING",PROCESSNAME="php-fpm",DELAY="2","EXECUTE"="/bin/echo testing"
 ```
